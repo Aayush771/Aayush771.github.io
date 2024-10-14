@@ -104,6 +104,22 @@ img {
   padding-bottom: 2rem;
 }
 
+
+.github-stats-container {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  gap: 50px; /* Space between the images */
+  flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+  margin-top: 20px; /* Optional: Add some margin above the container */
+  margin-bottom: 30px; /* Added margin below the container for spacing */
+}
+
+.github-stats-container img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add some border radius for a softer look */
+}
+
 /*===== LAYOUT =====*/
 .bd-grid {
 
@@ -233,20 +249,21 @@ img {
 }
 .home-img {
   position: absolute;
-  margin:5px;
-   width: 28%; 
-   border:2px solid;
-   border-radius: 50%;
+  margin-top: 80px;
+  width: 28%;
   border-color: #4070f4;
-  
-}
-.home-img {
+  border-radius: 50%; /* Ensure the container is circular */
+  overflow: hidden;
   right: 40%;
 }
-.home-imgsrc{
-  width:100%;
-  
+
+.home-imgsrc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+  border-radius: 50%; /* Ensures the image inside is circular as well */
 }
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -557,7 +574,51 @@ img.man-icons {
     justify-items: center;
   }
 }
+  /* Styling for the calendar container */
+  #github-calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
 
+  /* Styling for individual contribution blocks */
+  .github-calendar-graph .day {
+    stroke: #e1e4e8;
+  }
+
+  .github-calendar-graph .day[data-level="0"] {
+    fill: #ebedf0;
+  }
+  .github-calendar-graph .day[data-level="1"] {
+    fill: #c6e48b;
+  }
+  .github-calendar-graph .day[data-level="2"] {
+    fill: #7bc96f;
+  }
+  .github-calendar-graph .day[data-level="3"] {
+    fill: #239a3b;
+  }
+  .github-calendar-graph .day[data-level="4"] {
+    fill: #196127;
+  }
+
+  /* Additional styling for the legend */
+  .contrib-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .contrib-legend li {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
 @media screen and (min-width: 1024px) {
   .bd-grid {
     margin-left: auto;
