@@ -249,12 +249,12 @@ img {
 }
 .home-img {
   position: absolute;
-  margin-top: 80px;
+  margin-top: 70px;
   width: 28%;
   border-color: #4070f4;
   border-radius: 50%; /* Ensure the container is circular */
   overflow: hidden;
-  right: 40%;
+  right: 4%;
 }
 
 .home-imgsrc {

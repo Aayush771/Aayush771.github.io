@@ -27,13 +27,7 @@
               <img src="./img/a-logo.jpg" alt="A" />
           </a>
           
-          <a
-              href="https://drive.google.com/uc?export=download&id=1bZWIsRmLYKjyfQsIpMqd8Jan9-5kKpa9"
-              target="_blank"
-              class="resume-link"
-          >
-              Resume
-          </a>
+          
       </div>
       
 
@@ -71,13 +65,24 @@
             Hi 👋,<br />I'am <span class="home-title-color">Ayush</span><br />
             Java Developer
           </h2>
+          <!-- https://drive.google.com/file/d/1bZWIsRmLYKjyfQsIpMqd8Jan9-5kKpa9/view?usp=sharing -->
+          <a href="https://drive.google.com/file/d/1bZWIsRmLYKjyfQsIpMqd8Jan9-5kKpa9/view" target="_blank" class="button" onclick="downloadResume()">Resume</a>
 
-          <a
-            href="https://drive.google.com/file/d/1bZWIsRmLYKjyfQsIpMqd8Jan9-5kKpa9/view?usp=sharing"
-            target="_blank"
-            class="button"
-            >Resume</a
-          >
+          <script>
+          function downloadResume() {
+              // Open the Google Drive link in a new tab
+              window.open('https://drive.google.com/file/d/1bZWIsRmLYKjyfQsIpMqd8Jan9-5kKpa9/view', '_blank');
+              
+              // Trigger the download
+              var a = document.createElement('a');
+              a.href = 'https://drive.google.com/uc?export=download&id=1bZWIsRmLYKjyfQsIpMqd8Jan9-5kKpa9';
+              a.setAttribute('download', 'Resume.pdf'); // Optional: Set the name for the downloaded file
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+          }
+          </script>
+          
         </div>
 
         <div class="home-social">
