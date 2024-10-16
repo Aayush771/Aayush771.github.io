@@ -426,9 +426,15 @@ img.man-icons {
   font-weight: 400;
   margin: 1rem;
 }
+
+
 .project-btns {
   position: absolute;
   bottom: 0;
+
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  gap: 10px; /* Adds space between the buttons */
 }
 
 /* ===== CONTACT =====*/
