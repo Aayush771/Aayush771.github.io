@@ -149,7 +149,7 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 766px) and (min-width:0px) {
+/* @media screen and (max-width: 766px) and (min-width:0px) {
   .nav-menu {
     position: fixed;
     top: var(--header-height);
@@ -160,7 +160,7 @@ img {
     background-color: var(--second-color);
     transition: 0.5s;
   }
-}
+} */
 .nav-item {
   margin-bottom: var(--mb-4);
 }
@@ -266,13 +266,13 @@ img {
 
 /*BUTTONS*/
 .button {
-  display: inline-block;
+   display: inline-block;
   background-color: var(--first-color);
   border: 1px solid var(--first-color);
   color: #fff;
-  padding: 0.75rem 2.5rem;
+  padding: 0.55rem 1.5rem;
   font-weight: var(--font-semi);
-  border-radius: 0.5rem;
+  border-radius: .75rem; 
 }
 .button:hover {
   background-color: #fff;
@@ -530,6 +530,8 @@ img.man-icons {
   .home-data {
     align-self: flex-end;
   }
+
+
   .home-social {
     padding-top: 0;
     padding-bottom: 2.5rem;
